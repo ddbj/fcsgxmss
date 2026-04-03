@@ -1,6 +1,7 @@
 #!/bin/bash
 
-RESULTDIR="/home/$(whoami)/fcsgxmss"
+# RESULTDIR="/home/$(whoami)/fcsgxmss"
+RESULTDIR="/home/w3const/fcslog/gx"
 FCSDIR="/data1/FCS"
 INSTALLDIR="/home/tkosuge/work-kosuge/fcs2gsheet"
 
