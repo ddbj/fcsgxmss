@@ -3,7 +3,7 @@
 # RESULTDIR="/home/$(whoami)/fcsgxmss"
 RESULTDIR="/home/w3const/fcslog/gx"
 FCSDIR="/data1/FCS"
-INSTALLDIR="/home/tkosuge/work-kosuge/fcs2gsheet"
+INSTALLDIR="/home/w3const/fcsgxmss"
 
 showusage() {
 echo "Easily run FCS-GX against MSS submissions, ant put the result in ~/fcsgxmss and Gsheet."
