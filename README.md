@@ -2,7 +2,7 @@
 FCSgx-related scripts to assist MSS works for quick screening of the sequence contamination
 
 # Prerequisites
-- a012 node
+- a012 node (>512GB RAM, SSD, >48 Cores)
 - w3const user (for only the 1st setup)
 - python3
   - The modules (biopython, dictdiffer, ete3, pandas, polars, pydrive2, xlsxwriter) are quired to run, but have already been prepared in python venv, ~/wok-kosuge/mypy/. Therefore you do not need to install them by yourself.
