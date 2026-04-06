@@ -16,7 +16,17 @@ FCSgx-related scripts to assist MSS works for quick screening of the sequence co
 4. Copy the secret keys to upload the file to Gdrive. **Make sure that the owner of the two json files must be w3const:w3const with the permission 640.**  
    `cp -av ~/work-kosuge/fcsgxmss_secrets/*.json ~/fcsgx_mss`  
 
-## fcsgxmss.sh
+# How to use
+~~~
+bash /home/w3const/fcsgx_mss/run_fcs2gsheet.sh -d </home/w3const/submissions/production/NSUB######/YYYYmmdd-HHMMSS>
+e.g. bash /home/w3const/fcsgx_mss/run_fcs2gsheet.sh -d /home/w3const/submissions/production/NSUB999999/20261231-012346
+~~~
+Then the result is saved in `/home/w3const/fcslog/gx/<NSUB number>`. When the contamination is detected, the hyperlink to the contamination report is filled to the cell for corresponding NSUB in MSS working sheet.
+
+
+
+
+## Manually running fcsgxmss.sh
 Carry out FCS-GX against MSS submission.
 
 ### How to use
