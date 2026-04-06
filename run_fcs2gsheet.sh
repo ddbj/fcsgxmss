@@ -45,7 +45,7 @@ if [ -d "$RESULTDIR" ] ; then
 else
     read -p "${RESULTDIR} directory does not exist. Do you want to create it? (y/n) " yn
     case $yn in
-    [Yy] ) mkdir -v -p ${RESULTDIR} ;;
+    [Yy] ) mkdir -v -m 775 -p ${RESULTDIR} ;;
     [Nn] ) echo "Please create ${RESULTDIR} directory and run the script again." ; exit 0 ;;
     * ) echo "Please answer y or n, aborted." ; exit 0 ;;
     esac
@@ -62,7 +62,7 @@ fi
 if [ -d "${RESULTDIR}/${nsubnum}" ] ;then
     echo "${RESULTDIR}/${nsubnum} directory already exists, the result will be put in this directory."
 else
-    mkdir -v ${RESULTDIR}/${nsubnum}
+    mkdir -v -m 775 ${RESULTDIR}/${nsubnum}
 fi
 
 exec > >(tee ${RESULTDIR}/${nsubnum}/run_fcs2gsheet.log)
