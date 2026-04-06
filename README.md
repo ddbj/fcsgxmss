@@ -26,10 +26,7 @@ Then the result is saved in `/home/w3const/fcslog/gx/<NSUB number>`. When the co
 
 
 
-## Manually running fcsgxmss.sh
-Carry out FCS-GX against MSS submission.
-
-### How to use
+## When you would like to run only FCS-gx.
 ~~~
 ssh a012
 /data1/FCS/fcsgxmss.sh -q <NSUB######>|<path to a fasta file> -t <tax ID> [-o <directory name>]
