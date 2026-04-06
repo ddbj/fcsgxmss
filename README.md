@@ -14,7 +14,7 @@ FCSgx-related scripts to assist MSS works for quick screening of the sequence co
 2. git clone https://github.com/ddbj/fcsgx_mss.git
 3. Prepare symbolic lins for fcsgxmss.sh in /data1/FCS. `ln -s ~/fcsgx_mss/fcsgxmss.sh /data1/FCS/fcsgxmss.sh`
 4. Copy the secret keys to upload the file to Gdrive. **Make sure that the owner of the two json files must be w3const:w3const with the permission 640.**  
-   `cp -av ~/work-kosuge/fcsgxmss_secrets/*.json ~/fcsgx_mss`  
+   `cp -av ~/work-kosuge/fcsgxmss_secrets/*.json ~/fcsgx_mss/`  
 
 # How to use
 ~~~
