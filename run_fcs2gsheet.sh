@@ -3,7 +3,10 @@
 # RESULTDIR="/home/$(whoami)/fcsgxmss"
 RESULTDIR="/home/w3const/fcslog/gx"
 FCSDIR="/data1/FCS"
-INSTALLDIR="/home/w3const/fcsgxmss"
+INSTALLDIR="/home/w3const/fcsgx_mss"
+
+# enable python3 modules
+. /home/w3const/work-kosuge/mypy/bin/activate
 
 showusage() {
 echo "Easily run FCS-GX against MSS submissions, ant put the result in ~/fcsgxmss and Gsheet."
