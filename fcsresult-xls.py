@@ -49,7 +49,7 @@ def read_reports(data_dir: Path):
     print(f'{contami_count} contamination')
 
 def upload_gdrive(file_path: Path, fid):
-    gauth = GoogleAuth()
+    gauth = GoogleAuth(settings_file='/home/w3const/fcsgx_mss/settings.yaml')
     gauth.LocalWebserverAuth()
     drive = GoogleDrive(gauth)
     # インスタンスを作成
