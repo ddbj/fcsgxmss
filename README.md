@@ -15,7 +15,7 @@ FCSgx-related scripts to assist MSS works for quick screening of the sequence co
 3. Prepare symbolic lins for fcsgxmss.sh in /data1/FCS. `ln -s ~/fcsgx_mss/fcsgxmss.sh /data1/FCS/fcsgxmss.sh`
 4. Copy the secret keys to upload the file to Gdrive. **Make sure that the owner of the two json files must be w3const:w3const with the permission 640.**  
    `cp -av ~/work-kosuge/fcsgxmss_secrets/*.json ~/fcsgx_mss/`
-5. The script depends on the taxonomy data prepared by ete tool. To update `~/work-kosuge/etetoolkit/ncbitaxonomy.sqlite`, `~/fcsgx_mss/update_taxonomydb.py` should be executeted by w3const user at 6:00 every day.
+5. The script depends on the taxonomy data prepared by ete tool. To update `~/work-kosuge/etetoolkit/ncbitaxonomy.sqlite`, `bash ~/fcsgx_mss/update_taxonomydb.sh` should be executeted by w3const user at 6:00 every day.
 
 # How to use
 ~~~
