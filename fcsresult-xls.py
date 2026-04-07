@@ -70,9 +70,11 @@ def main():
     XLS_FILEPATH = DATA_DIR / f"{DATA_DIR.name}.xlsx"
     if Path(XLS_FILEPATH).exists():
         print(f"{XLS_FILEPATH} is created successfully.")
+        upload_gdrive(XLS_FILEPATH, '15E0yNLuRQdmW5bN6wDOxEoAzE-EuLyjH')
         if contami_count > 0:
-            upload_gdrive(XLS_FILEPATH, '15E0yNLuRQdmW5bN6wDOxEoAzE-EuLyjH')
-            print(f"{XLS_FILEPATH} is uploaded to Gdrive.")
+            print(f"{XLS_FILEPATH} showing contaminationis is uploaded to Gdrive.")
+        else:
+            print(f"{XLS_FILEPATH} showing no-contaminationis is uploaded to Gdrive.")
 
 if __name__ == "__main__":
     main()
