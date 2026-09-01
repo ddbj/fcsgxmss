@@ -60,6 +60,10 @@ def main():
         new_columns=['col1', 'col2', 'col3', 'col4', 'col5']
     ).with_row_index("row")
 
+    df = df.with_columns(
+        pl.col(pl.String).str.strip_chars()
+    )
+
     rows_first_col = df.filter((pl.col('col1').is_not_null()) & (pl.col('col1') != '')).select('row').to_series().to_list()
 
     # find datatype
